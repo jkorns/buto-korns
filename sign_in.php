@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) { //check if the form has been submitted
 			$row = $result->fetch_assoc();
 			$_SESSION['forename'] = $row['forename'];
 			$_SESSION['surname'] = $row['surname'];
-			$goto = empty($_SESSION['goto']) ? '/buto-korns/' : $_SESSION['goto'];			
+			$goto = empty($_SESSION['goto']) ? '/~jkorns/buto-korns/' : $_SESSION['goto'];			
 			header('Location: ' . $goto);
 			exit;			
 		} else {
